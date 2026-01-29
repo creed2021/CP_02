@@ -128,8 +128,64 @@ entity Car : cuid, managed {
     virtual discount_2 : Decimal;
 }
 
-entity prueba as select from productos;
+entity SelProducts   as select from productos;
 
-entity prueba2 as select from Car;
+entity SelProducts1  as
+    select from productos {
+        *
+    };
 
-entity prueba3 as projection on productos;
+entity SelProducts2  as
+    select from productos {
+        name,
+        Price,
+        Quantity
+    };
+
+entity SelProducts3  as
+    select from productos
+    left join ProductReview
+        on productos.name = ProductReview.Name
+    {
+        Rating               as Rating,
+        productos.name       as Name,
+        sum(productos.Price) as TotalPrice
+    }
+    group by
+        Rating,
+        productos.name
+    order by
+        Rating;
+
+
+entity ProjProducts  as projection on productos;
+
+entity ProjProducts2 as
+    projection on productos {
+        *
+    };
+
+entity ProjProducts3 as
+    projection on productos {
+        ReleaseDate,
+        name
+    };
+
+
+// entity ParamProductos(pName: String)  as
+//  select from productos {
+//    name,
+//   Price,
+//  Quantity
+//  }
+//  where
+//    name = :pName;
+
+// entity ProjParamProducts(pName: String) as projection on productos
+//                                       where
+//                                         name = :pName;
+
+extend productos with {
+    PriceCondition     : String(2);
+    PriceDetermination : String(3);
+}

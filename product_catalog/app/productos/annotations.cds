@@ -53,6 +53,16 @@ annotate service.productos with @(
                 $Type: 'UI.DataField',
                 Label: 'Quantity',
                 Value: Quantity
+            },
+             {
+                $Type: 'UI.DataField',
+                Label: 'PriceCondition',
+                Value: PriceCondition
+            },
+             {
+                $Type: 'UI.DataField',
+                Label: 'PriceDetermination',
+                Value: PriceDetermination
             }
         ],
     },

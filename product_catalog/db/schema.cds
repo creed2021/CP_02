@@ -67,6 +67,8 @@ entity productos : cuid, managed {
     Width            : Decimal(16, 2);
     Depth            : Decimal(16, 2);
     Quantity         : Decimal(16, 2);
+    Supplier          : Association to one Suppliers;
+    UnitOfMeasure    : Association to UnitOfMeasures;
 
 }
 

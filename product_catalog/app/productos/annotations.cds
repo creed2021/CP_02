@@ -7,7 +7,7 @@ annotate service.productos with @(
             {
                 $Type: 'UI.DataField',
                 Label: 'Name',
-                Value: name
+                Value: Name
             },
             {
                 $Type: 'UI.DataField',
@@ -75,8 +75,8 @@ annotate service.productos with @(
     UI.LineItem                  : [
         {
             $Type: 'UI.DataField',
-            Label: 'name',
-            Value: name,
+            Label: 'Name',
+            Value: Name,
         },
         {
             $Type: 'UI.DataField',

@@ -1,5 +1,4 @@
-ID,name,Descripcion,ImageUrl,ReleaseDate,DiscontinuedDate,Price,Height,Width,Depth,Quantity,createdAt,createdBy,modifiedAt,modifiedBy,Supplier_ID,UnitOfMeasure_ID
-cuid-prod-0001,Notebook Pro 14,"Notebook profesional 14 pulgadas","https://example.com/img/notebook14.png",2024-01-10T00:00:00Z,,150000.00,2.00,32.00,22.00,50.00,2024-01-10T08:00:00Z,admin,2024-01-10T08:00:00Z,admin,550e8400-e29b-41d4-a716-446655440000,a1
-cuid-prod-0002,Smartphone X,"Smartphone gama alta","https://example.com/img/smartphone.png",2024-02-05T00:00:00Z,,98000.50,0.80,7.50,0.90,120.00,2024-02-05T09:15:00Z,admin,2024-02-05T09:15:00Z,admin,6fa459ea-ee8a-3ca4-894e-db77e160355e,a1
-cuid-prod-0003,Monitor 27","Monitor 27 pulgadas 4K","https://example.com/img/monitor27.png",2023-11-20T00:00:00Z,,87000.75,45.00,62.00,5.50,30.00,2023-11-20T10:30:00Z,admin,2023-11-20T10:30:00Z,admin,123e4567-e89b-12d3-a456-426614174000,a2
-cuid-prod-0004,Teclado Mecánico,"Teclado mecánico RGB","https://example.com/img/keyboard.png",2023-09-15T00:00:00Z,2025-01-01T00:00:00Z,25000.00,4.00,45.00,15.00,80.00,2023-09-15T11:45:00Z,admin,2024-12-20T14:00:00Z,admin,f47ac10b-58cc-4372-a567-0e02b2c3d479,a5
+ID,Name,Description,ImageUrl,ReleaseDate,DiscontinuedDate,Price,Height,Width,Depth,Quantity,Supplier_ID
+08c142fa-01b0-441d-b01d-eeaa3291f6f0,Bread,Whole grain bread,/product/webapp/assets/bread.jpg,1992-01-01T00:00:00Z,,2.5,5,10,8,20,aead11fd-e35b-4f6f-a37a-e4a860aaaad7
+aa74747d-c297-4f0a-981a-8fb0ca92b756,Milk,Low fat milk,/product/webapp/assets/milk.jpg,1995-10-01T00:00:00Z,,3.5,5,10,8,15,aead11fd-e35b-4f6f-a37a-e4a860aaaad7
+ea610da1-ea93-4258-85e1-099167d67bf9,Vint soda,Americana Variety - Mix of 6 flavors,/product/webapp/assets/vint-soda.jpg,2000-10-01T00:00:00Z,,20.9,5,10,8,8,aead11fd-e35b-4f6f-a37a-e4a860aaaad7

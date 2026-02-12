@@ -17,7 +17,6 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-productos": "cds watch --open db.productos/index.html?sap-ui-xx-viewCache=false --livereload false",
     "undeploy": "cf undeploy product_catalog --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
     "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
@@ -32,8 +31,5 @@
   },
   "workspaces": [
     "app/*"
-  ],
-  "sapux": [
-    "app/productos"
   ]
 }

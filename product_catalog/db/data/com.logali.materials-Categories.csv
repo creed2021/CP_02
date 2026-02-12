@@ -1,1 +1,4 @@
-ID,Name,createdAt,createdBy,modifiedAt,modifiedBy
+ID,Name
+F,Food
+B,Beverages
+E,Electronics

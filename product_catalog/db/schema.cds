@@ -39,7 +39,7 @@ context materials {
 
     entity Productos : cuid, managed {
         Name             : localized String not null;
-        Descripcion      : localized String;
+        Description      : localized String;
         ImageUrl         : String;
         ReleaseDate      : DateTime default $now;
         DiscontinuedDate : DateTime;

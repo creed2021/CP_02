@@ -1,0 +1,9 @@
+ClientEmail,FirstName,LastName,CreateOn,Reviewed,Aproved
+john.doe@gmail.com,John,Doe,2026-01-10,true,true
+maria.lopez@yahoo.com,Maria,Lopez,2026-01-15,true,false
+carlos.perez@outlook.com,Carlos,Perez,2026-01-20,false,false
+ana.martinez@gmail.com,Ana,Martinez,2026-01-25,true,true
+luis.gomez@hotmail.com,Luis,Gomez,2026-02-01,false,false
+sofia.ramirez@gmail.com,Sofia,Ramirez,2026-02-05,true,true
+diego.fernandez@yahoo.com,Diego,Fernandez,2026-02-08,true,false
+valentina.torres@outlook.com,Valentina,Torres,2026-02-10,false,false

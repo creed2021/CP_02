@@ -173,18 +173,6 @@ context sales {
         DeliveryMonth : Association to Months;
     }
 
-    entity Order : cuid, managed {
-        ClientGender : Gender;
-        Status       : OrderStatus;
-        Priority     : Priority;
-    }
-
-    entity Car : cuid, managed {
-                name       : String;
-        virtual discount_1 : Decimal;
-        virtual discount_2 : Decimal;
-    }
-
     entity Orders : cuid {
         Date     : DateTime;
         Customer : String;
@@ -199,6 +187,48 @@ context sales {
 
 
     }
+
+
+}
+
+context Reports {
+
+    entity AverageRating as
+        select from materials.ProductReview {
+            ProductReview.ID as ProductID,
+            avg(Rating)      as AverageRating : Decimal(10, 2)
+        }
+        group by
+            ProductReview.ID;
+
+    entity Prueba        as
+        select from materials.Productos {
+            *
+        }
+
+    entity Products      as
+        select from materials.Productos
+        mixin {
+            ToStockAvailability : Association to logali.materials.StockAvailability
+                                      on ToStockAvailability.ID = $projection.StockAvailability;
+
+            ToAverageRating     : Association to AverageRating
+                                      on ToAverageRating.ProductID = ID;
+        }
+        into {
+            *,
+            ToAverageRating.AverageRating as Rating,
+
+            case
+                when Quantity >= 8
+                     then 3
+                when Quantity > 0
+                     then 2
+                else 1
+            end                           as StockAvailability : Integer,
+
+            ToStockAvailability
+        };
 
 
 }

@@ -1,0 +1,7 @@
+##GET ORDERS
+
+GET http://localhost:4004/odata/v4/manage-orders/Orders
+
+### GET AverageRating
+
+GET http://localhost:4004/odata/v4/reports/AverageRating

@@ -190,10 +190,3 @@ define service Reports {
             exists Supplier[Name = 'Exotic Liquids']
 
 }
-
-define service ManageOrders {
-
-    entity Orders as projection on training.Orders;
-
-
-}

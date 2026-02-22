@@ -204,12 +204,12 @@ context Reports {
     entity Prueba        as
         select from materials.Productos {
             *
-        }
+        };
 
     entity Products      as
         select from materials.Productos
         mixin {
-            ToStockAvailability : Association to logali.materials.StockAvailability
+            ToStockAvailability : Association to materials.StockAvailability
                                       on ToStockAvailability.ID = $projection.StockAvailability;
 
             ToAverageRating     : Association to AverageRating

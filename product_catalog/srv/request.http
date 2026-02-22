@@ -5,3 +5,17 @@ GET http://localhost:4004/odata/v4/manage-orders/Orders
 ### GET AverageRating
 
 GET http://localhost:4004/odata/v4/reports/AverageRating
+
+### POST
+
+POST http://localhost:4004/odata/v4/manage-orders/Orders
+Content-Type: application/json
+
+{
+      "ClientEmail": "dantetagliavini@gmail.com",
+      "FirstName": "Dante Federico",
+      "LastName": "Tagliavini",
+      "CreateOn": "2026-10-12",
+      "Reviewed": true,
+      "Aproved": true
+}
